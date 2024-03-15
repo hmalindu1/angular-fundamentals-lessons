@@ -6,9 +6,11 @@ import { RouterModule } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  template: ` 
-  <h1>Enable routing to see the greeting below</h1>
-  <router-outlet/>
+  template: `
+    <h1>Enable routing to see the greeting below</h1>
+    <section style="border: solid 1px black;">
+      <router-outlet />
+    </section>
   `,
   styles: [],
 })
