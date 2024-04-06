@@ -9,6 +9,11 @@ export class UserService {
 
   constructor() {}
 
+  /**
+   * Retrieves user data as a promise of an array of User objects.
+   *
+   * @return {Promise<User[]>} a promise of an array of User objects
+   */
   getUserData(): Promise<User[]> {
     return new Promise((resolve) => {
       resolve(this.userData);
